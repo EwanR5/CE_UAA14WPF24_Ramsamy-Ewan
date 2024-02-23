@@ -1,0 +1,44 @@
+﻿<Window x:Class="CE_UAA14WPF24_Ramsamy_Ewan.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CE_UAA14WPF24_Ramsamy_Ewan"
+        mc:Ignorable="d"
+        Title="CE_WPF" Height="1000" Width="1200">
+    <Grid x:Name="Main" Background="#EBD9B4">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="8*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+
+        <TextBox Text="VÉRIFIONS VOS CONNAISSANCES en WPF" HorizontalAlignment="Center" Margin="30" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" FontSize="34" FontWeight="Bold" Background="#EBD9B4" Foreground="#638889" BorderBrush="#EBD9B4"/>
+        <TextBox Text="Test WPF 6T 2024" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="red" FontSize="30" Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="2" Background="#EBD9B4" BorderBrush="#EBD9B4"/>
+
+        <StackPanel Grid.Row="1" Grid.Column="1" Background="#9DBC98">
+            <StackPanel>
+                <StackPanel>
+                    <RadioButton x:Name="solitaire" Content="Solitaire" FontSize="22" FontWeight="Bold"/>
+                    <RadioButton x:Name="marelle" Content="Marelle" FontSize="22" FontWeight="Bold"/>
+                    <RadioButton x:Name="bande" Content="Une bande latérale" FontSize="22" FontWeight="Bold"/>
+                </StackPanel>
+                <StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="NbrLignes" FontSize="22" FontWeight="Bold"/>
+                        <TextBox x:Name="lignes" Width="25"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="NbrColonnes" FontSize="22" FontWeight="Bold"/>
+                        <TextBox x:Name="colonnes" Width="25"/>
+                    </StackPanel>
+                </StackPanel>
+            </StackPanel>
+            <Button x:Name="BtnValider" FontWeight="Bold" FontSize="22" Content="VALIDER"/>
+        </StackPanel>
+    </Grid>
+</Window>
